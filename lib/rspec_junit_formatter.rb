@@ -22,7 +22,7 @@ private
     output << %{ failures="#{failure_count}"}
     output << %{ errors="#{error_count}"}
     output << %{ time="#{escape("%.6f" % duration)}"}
-    output << %{ timestamp="#{escape(started.iso8601)}"}
+    # output << %{ timestamp="#{escape(started.iso8601)}"}
     output << %{ hostname="#{escape(Socket.gethostname)}"}
     output << %{>\n}
     output << %{<properties>\n}
